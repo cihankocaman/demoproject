@@ -10,11 +10,11 @@ public abstract class ObjectCreator : MonoBehaviour
     public static bool isObjCreated = false;
     public abstract string Name { get; }
 
-    public void Process(GameObject obj)
+    public void Process(GameObject obj, Vector3 mousePos)
     {
         if (!isObjCreated)
         {
-            GameObject building = Instantiate(obj);
+            GameObject building = Instantiate(obj, mousePos, Quaternion.identity);
             isObjCreated = true;
         }
     }

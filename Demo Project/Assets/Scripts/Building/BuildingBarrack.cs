@@ -8,5 +8,6 @@ public class BuildingBarrack : BuildingBase
     public override void Start()
     {
         health = 100;
+        base.Start();
     }
 }

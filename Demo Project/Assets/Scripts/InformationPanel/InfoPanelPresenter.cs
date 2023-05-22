@@ -12,7 +12,7 @@ public class InfoPanelPresenter : MonoBehaviour
     {
         buildingImage.gameObject.SetActive(true);
         buildingImage.sprite = hitObj.GetComponent<SpriteRenderer>().sprite;
-        if (hitObj.transform.childCount > 0)
+        if (hitObj.transform.childCount > 1)
         {
             productionImage.gameObject.SetActive(true);
             productionImage.sprite = hitObj.GetComponent<SoldierCreator>().soldier.GetComponent<SpriteRenderer>().sprite;

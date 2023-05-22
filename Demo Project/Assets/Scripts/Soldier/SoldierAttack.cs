@@ -19,7 +19,6 @@ public class SoldierAttack : MonoBehaviour, IAttack
     {
         while (targetEnemy != null)
         {
-            Debug.Log("coroutine");
             if (targetEnemy.CompareTag("soldier"))
             {
                 targetEnemy.GetComponent<SoldierBase>().TakeDamage(soldierBase.damage);
@@ -28,7 +27,7 @@ public class SoldierAttack : MonoBehaviour, IAttack
             {
                 targetEnemy.GetComponent<BuildingBase>().TakeDamage(soldierBase.damage);
             }
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
         }
 
         if (targetEnemy == null)

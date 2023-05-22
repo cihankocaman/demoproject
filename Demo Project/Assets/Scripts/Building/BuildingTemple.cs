@@ -8,5 +8,6 @@ public class BuildingTemple : BuildingBase
     public override void Start()
     {
         health = 40;
+        base.Start();
     }
 }

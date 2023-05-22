@@ -8,5 +8,6 @@ public class BuildingPowerPlant : BuildingBase
     public override void Start()
     {
         health = 50;
+        base.Start();
     }
 }

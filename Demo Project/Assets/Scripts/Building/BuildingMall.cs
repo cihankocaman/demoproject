@@ -8,5 +8,6 @@ public class BuildingMall : BuildingBase
     public override void Start()
     {
         health = 60;
+        base.Start();
     }
 }

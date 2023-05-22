@@ -8,5 +8,6 @@ public class BuildingOffice : BuildingBase
     public override void Start()
     {
         health = 30;
+        base.Start();
     }
 }

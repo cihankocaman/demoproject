@@ -35,6 +35,8 @@ public class Placement : MonoBehaviour
         {
             transform.position = transform.position;
             isPlaced = true;
+            isPlaceable = false;
+
             ObjectCreator.isObjCreated = false;
 
             boxCollider.isTrigger = false;
